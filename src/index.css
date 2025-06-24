@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-rethink: "Rethink", sans-serif; 
+  }
+
+  .hero{
+    visibility: hidden;
+  }
+
+  /* navbar logo */
+  .cube {
+    transform-style: preserve-3d;
+    animation: rotate 6s infinite linear;
+  }
+   @keyframes rotate {
+    from { transform: rotateX(0deg) rotateY(0deg); }
+    to { transform: rotateX(180deg) rotateY(180deg); }
+  } 
+
+  /* for front-end word bg */
+  .div {
+    animation: animate 1s  infinite ease-in-out alternate;
+  }
+  @keyframes animate {
+    0%
+    {
+      color: #F1F1F1;
+      
+    }
+    100%
+    {
+      color: #F6F6F6;
+      
+    }
+  }
+  
+
+  @font-face {
+    font-family: Impact;
+    font-style: normal;
+    src: url("/src/fonts/impact.ttf") format("truetype");
+  }
+
+  @theme {
+    --font-impact: Impact, sans-serif;
+  }
+
+  @font-face {
+    font-family: PPNeue;
+    src: url("./fonts/ppneuemontreal-medium.otf") format("opentype");
+  }
+
+  @theme {
+    --font-neue: PPNeue, sans-serif;
+  }
+  
